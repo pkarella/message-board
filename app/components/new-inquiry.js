@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     inquiryFormShow() {
       this.set('addNewInquiry', true);
     },
-    saveInquiry() {
+    saveInquiry1() {
      var params = {
        author: this.get('author') ? this.get('author') : "",
        greatQuestion: this.get('greatQuestion') ? this.get('greatQuestion') : "",

@@ -1,8 +1,17 @@
 
 <div class="container">
 <li>
+
 <p>{{inquiry.author}}</p> <p>{{inquiry.greatQuestion}}</p> <p>{{inquiry.notes}}</p>
 
 <button {{action 'delete' inquiry}}> Delete Question </button>
 </li>
 </div>
+<h2> Answers </h2>
+<!-- {{log inquiry.author}} -->
+<ul>
+  {{#each inquiry.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+<button {{action 'delete' inquiry}}>Delete</button>

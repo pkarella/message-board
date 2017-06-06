@@ -1,8 +1,8 @@
 <h1>Welcome to the main page</h1>
 
 <ul>
-  {{#each model as |inquiry|}}
+  {{#each model.inquiries as |inquiry|}}
      {{inquiry-tile inquiry=inquiry}}
   {{/each}}
 </ul>
-{{new-inquiry saveInquiry="saveInquiry"}}
+{{new-inquiry saveInquiry2="saveInquiry3"}}

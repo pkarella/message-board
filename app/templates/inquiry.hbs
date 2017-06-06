@@ -1,3 +1,11 @@
+
+
+
+
 <h2>To give your answer to the question {{model.greatQuestion}}</h2>
+
 {{update-inquiry inquiry=model update="update"}}
+
 {{inquiry-detail-page inquiry=model destroyInquiry="destroyInquiry"}}
+
+{{new-answer saveAnswer="saveAnswer" inquiry=model}}

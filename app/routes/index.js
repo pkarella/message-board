@@ -2,10 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('inquiry');
+    return Ember.RSVP.hash({
+    inquiries: this.store.findAll('inquiry'),
+    answers: this.store.findAll('answer')
+ });
  },
  actions: {
-    saveInquiry(params) {
+    saveInquiry3(params) {
       var newInquiry = this.store.createRecord('inquiry', params);
       newInquiry.save();
       this.transitionTo('index');
