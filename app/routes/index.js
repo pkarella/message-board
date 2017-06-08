@@ -8,7 +8,7 @@ export default Ember.Route.extend({
  });
  },
  actions: {
-    saveInquiry3(params) {
+    saveInquiry(params) {
       var newInquiry = this.store.createRecord('inquiry', params);
       newInquiry.save();
       this.transitionTo('index');

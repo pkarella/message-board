@@ -21,7 +21,7 @@ destroyInquiry(inquiry) {
  },
  saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
-      var answer = params.inquiry;
+      var inquiry = params.inquiry;
       inquiry.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
         return inquiry.save();
