@@ -1,7 +1,6 @@
 # message-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+* This is a question and answer app. By: Peter Karellas
 
 ## Prerequisites
 
@@ -24,6 +23,19 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+
+## Planning
+1. Specs
+
+* Questions will include the question itself, an author, and additional notes.
+* Answers will include the answer and the name.
+* Site will include a navbar that appears on all pages.
+* Site will list all questions on the homepage, displaying only the question.
+* Site will allow users to click a question, to be routed to another page containing additional information and question details.
+* Site will allow users to add and update questions.
+* Site will allow users to add answers to a question.
+* Answers will be added and viewed on the same page as the question.
+
 
 ### Code Generators
 

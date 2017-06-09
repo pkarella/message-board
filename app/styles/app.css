@@ -1,3 +1,13 @@
 body{
   background: #e6ffff;
 }
+.jumbotron{
+  background:#42b3f4;
+  text-align: center;
+  text-decoration: underline;
+  font-family: cursive;
+}
+
+h3{
+  font-size: 50px;
+}
